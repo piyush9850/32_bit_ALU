@@ -1,0 +1,301 @@
+$date
+	Fri Jan 30 22:49:02 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_32_bit $end
+$var wire 1 ! carry $end
+$var wire 32 " Y [31:0] $end
+$var reg 32 # A [31:0] $end
+$var reg 32 $ B [31:0] $end
+$var reg 4 % op [3:0] $end
+$scope module DUT $end
+$var wire 32 & A [31:0] $end
+$var wire 32 ' B [31:0] $end
+$var wire 4 ( op [3:0] $end
+$var wire 1 ) trans_sel $end
+$var wire 1 * trans_op $end
+$var wire 1 + sub $end
+$var wire 1 , shift_right $end
+$var wire 1 - shift_op $end
+$var wire 2 . sel [1:0] $end
+$var wire 1 / mul_op $end
+$var wire 1 0 logic_op $end
+$var wire 1 ! carry $end
+$var wire 1 1 arithmetic_op $end
+$var wire 32 2 Y [31:0] $end
+$scope module CTRL $end
+$var wire 4 3 op [3:0] $end
+$var reg 1 1 arithmic_op $end
+$var reg 1 0 logic_op $end
+$var reg 1 / mul_op $end
+$var reg 2 4 sel [1:0] $end
+$var reg 1 - shift_op $end
+$var reg 1 , shift_right $end
+$var reg 1 + sub $end
+$var reg 1 * trans_op $end
+$var reg 1 ) trans_sel $end
+$upscope $end
+$scope module DP $end
+$var wire 32 5 A [31:0] $end
+$var wire 32 6 B [31:0] $end
+$var wire 1 1 arithmic_op $end
+$var wire 1 0 logic_op $end
+$var wire 1 / mul_op $end
+$var wire 2 7 sel [1:0] $end
+$var wire 1 - shift_op $end
+$var wire 1 , shift_right $end
+$var wire 1 + sub $end
+$var wire 1 * trans_op $end
+$var wire 1 ) trans_sel $end
+$var wire 32 8 trans_out [31:0] $end
+$var wire 32 9 shift_out [31:0] $end
+$var wire 32 : mul_out [31:0] $end
+$var wire 32 ; logic_out [31:0] $end
+$var wire 1 ! carry $end
+$var wire 33 < arith_out [32:0] $end
+$var reg 32 = Y [31:0] $end
+$scope module AU $end
+$var wire 32 > A [31:0] $end
+$var wire 32 ? B [31:0] $end
+$var wire 32 @ B_xor [31:0] $end
+$var wire 1 + sub $end
+$var wire 33 A Y [32:0] $end
+$upscope $end
+$scope module LU $end
+$var wire 32 B A [31:0] $end
+$var wire 32 C B [31:0] $end
+$var wire 2 D sel [1:0] $end
+$var reg 32 E Y [31:0] $end
+$upscope $end
+$scope module MU $end
+$var wire 32 F A [31:0] $end
+$var wire 32 G B [31:0] $end
+$var wire 32 H Y [31:0] $end
+$upscope $end
+$scope module SU $end
+$var wire 32 I A [31:0] $end
+$var wire 1 , shift $end
+$var wire 32 J Y [31:0] $end
+$upscope $end
+$scope module TU $end
+$var wire 32 K A [31:0] $end
+$var wire 32 L B [31:0] $end
+$var wire 1 ) sel $end
+$var wire 32 M Y [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1xx000 M
+b100000 L
+b111000 K
+b0xx1xx00 J
+b111000 I
+b11100000000 H
+b100000 G
+b111000 F
+b0 E
+bx D
+b100000 C
+b111000 B
+bx A
+bx @
+b100000 ?
+b111000 >
+b0 =
+bx <
+b0 ;
+b11100000000 :
+b0xx1xx00 9
+b1xx000 8
+bx 7
+b100000 6
+b111000 5
+bx 4
+bx 3
+b0 2
+x1
+x0
+x/
+bx .
+x-
+x,
+x+
+x*
+x)
+bx (
+b100000 '
+b111000 &
+bx %
+b100000 $
+b111000 #
+b0 "
+x!
+$end
+#10
+0!
+b111000 8
+b111000 M
+b1110000 9
+b1110000 J
+b100000 ;
+b100000 E
+b1011000 <
+b1011000 A
+b100000 @
+b1011000 "
+b1011000 2
+b1011000 =
+0)
+0*
+0/
+0,
+0-
+b0 .
+b0 4
+b0 7
+b0 D
+00
+0+
+11
+b0 %
+b0 (
+b0 3
+#20
+1!
+b11111111111111111111111111011111 @
+b11000 "
+b11000 2
+b11000 =
+b100000000000000000000000000011000 <
+b100000000000000000000000000011000 A
+1+
+11
+b1 %
+b1 (
+b1 3
+#30
+0!
+b100000 @
+b100000 "
+b100000 2
+b100000 =
+10
+b1011000 <
+b1011000 A
+0+
+01
+b10 %
+b10 (
+b10 3
+#40
+b111000 "
+b111000 2
+b111000 =
+b111000 ;
+b111000 E
+b1 .
+b1 4
+b1 7
+b1 D
+10
+b11 %
+b11 (
+b11 3
+#50
+b11000 "
+b11000 2
+b11000 =
+b11000 ;
+b11000 E
+b10 .
+b10 4
+b10 7
+b10 D
+10
+b100 %
+b100 (
+b100 3
+#60
+b11111111111111111111111111000111 "
+b11111111111111111111111111000111 2
+b11111111111111111111111111000111 =
+b11111111111111111111111111000111 ;
+b11111111111111111111111111000111 E
+b11 .
+b11 4
+b11 7
+b11 D
+10
+b101 %
+b101 (
+b101 3
+#70
+b100000 ;
+b100000 E
+b1110000 "
+b1110000 2
+b1110000 =
+1-
+b0 .
+b0 4
+b0 7
+b0 D
+00
+b110 %
+b110 (
+b110 3
+#80
+b11100 "
+b11100 2
+b11100 =
+b11100 9
+b11100 J
+1,
+1-
+b111 %
+b111 (
+b111 3
+#90
+b1110000 9
+b1110000 J
+b11100000000 "
+b11100000000 2
+b11100000000 =
+1/
+0,
+0-
+b1000 %
+b1000 (
+b1000 3
+#100
+b111000 "
+b111000 2
+b111000 =
+1*
+0/
+b1001 %
+b1001 (
+b1001 3
+#110
+b100000 "
+b100000 2
+b100000 =
+b100000 8
+b100000 M
+1)
+1*
+b1010 %
+b1010 (
+b1010 3
